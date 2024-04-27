@@ -1,0 +1,7 @@
+@use 'variable';
+@use 'breakpoint';
+
+.inner{
+    width: variable.$width-inner;
+    margin: 0 auto;
+}

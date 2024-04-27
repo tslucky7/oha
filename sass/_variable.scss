@@ -1,0 +1,22 @@
+$font-family-ja : 'Noto Sans JP', sans-serif;
+$font-family-en : 'Montserrat', sans-serif;
+
+$font-size-base : 16px;
+$line-height-base : 1.7;
+
+$font-color-black: #111;
+$font-color-white: #fff;
+
+$background-color-base: #FAFAFA;
+$background-color-key1: #F5810E;
+$background-color-key2: #FABE00;
+$color-gradation: linear-gradient(180deg, #F8B819 0%, #F0D320 100%);
+
+$width-inner: 1140px;
+
+body{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $font-color-black;
+}

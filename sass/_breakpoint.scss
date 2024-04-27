@@ -1,0 +1,12 @@
+@use "sass:map";//必ずSassの先頭に記述
+
+$breakpoints:(
+     sp:"not screen and (min-width: 768px)",
+     pc:"screen and (min-width: 768px)",
+);
+
+@mixin mq($breakpoint: pc) {
+    @media #{map.get($breakpoints, $breakpoint)} {
+      @content;
+    }
+}
