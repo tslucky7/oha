@@ -4,6 +4,9 @@
 .header {
     position: fixed;
     width: 100vw;
+    @include breakpoint.mq(pc) {
+        padding: 30px 30px 25px;
+    }
 }
 .header__inner{
     display: flex;
@@ -82,3 +85,4 @@
         bottom: 0;
     }
 }
+
