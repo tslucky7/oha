@@ -1,3 +1,84 @@
 @use 'variable.scss';
 @use 'breakpoint.scss';
 
+.header {
+    position: fixed;
+    width: 100vw;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    @include breakpoint.mq(pc) {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+}
+.logo {
+    width: 100px;
+    height: 26px;
+    @include breakpoint.mq(pc) {
+        width: 135px;
+        height: 35px;
+        flex-shrink: 0;
+    }
+}
+.nav {
+    display: none;
+    @include breakpoint.mq(pc) {
+        display: block;
+        margin-left: auto;
+    }
+}
+.nav__list {
+    display: flex;
+    column-gap: 40px;
+}
+.nav__item {
+    color: variable.$font-color-black;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+}
+.nav__link {
+}
+.nav__button{
+    a{
+        padding: 10px 30px;
+        border-radius: 60px;
+        border: 2px solid #111;
+    }
+}
+.drawer {
+    display: block;
+    margin-left: auto;
+    position: relative;
+    width: 36px;
+    height: 21px;
+    @include breakpoint.mq(pc) {
+        display: none;
+    }
+}
+.header__open {
+}
+.drawer-icon__bar {
+    position: absolute;
+    width: 36px;
+    height: 3px;
+    border-radius: 6px;
+    background: #111;
+    display: block;
+    &:nth-of-type(1){
+        content: "";
+        top: 0;
+    }
+    &:nth-of-type(2){
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:nth-of-type(3){
+        content: "";
+        bottom: 0;
+    }
+}
