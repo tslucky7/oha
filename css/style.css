@@ -22,18 +22,10 @@ body {
   position: fixed;
   width: 100vw;
 }
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 30px 30px 25px;
-  }
-}
 
 .header__inner {
   display: flex;
   align-items: center;
-
-.nav {
-  margin-left: auto;
   padding-top: 22px;
   padding-bottom: 22px;
 }
@@ -116,5 +108,4 @@ body {
 .drawer-icon__bar:nth-of-type(3) {
   content: "";
   bottom: 0;
-
 }
