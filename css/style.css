@@ -20,7 +20,9 @@ body {
 
 .header {
   position: fixed;
+  top: 0;
   width: 100vw;
+  background-color: #FAFAFA;
 }
 
 .header__inner {
@@ -108,4 +110,138 @@ body {
 .drawer-icon__bar:nth-of-type(3) {
   content: "";
   bottom: 0;
+}
+
+.main__visual {
+  margin-top: 70px;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .main__visual {
+    margin-top: 100px;
+    padding: 0 30px;
+  }
+}
+
+.main__visual__wrap {
+  width: 1380px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  background: linear-gradient(180deg, #F8B819 0%, #F0D320 100%);
+  border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .main__visual__wrap {
+    display: flex;
+  }
+}
+
+.main__visual .inner {
+  position: relative;
+  margin-top: 70px;
+}
+@media screen and (min-width: 768px) {
+  .main__visual .inner {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+}
+
+.visual__texts {
+  padding-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .visual__texts {
+    height: 580px;
+    padding-top: 0px;
+  }
+}
+
+.visual__title {
+  margin: 0 auto;
+  font-size: 22px;
+  letter-spacing: 2.2px;
+}
+@media screen and (min-width: 768px) {
+  .visual__title {
+    margin-top: 20px;
+    letter-spacing: 3.8px;
+  }
+}
+
+.visual__title p {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 100%; /* 22px */
+  font-weight: 700;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .visual__title p {
+    margin: 0;
+    font-size: 38px;
+  }
+}
+.visual__title p:first-of-type {
+  margin-bottom: 8px;
+}
+
+.visual__catchcopy {
+  margin-top: 26px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 170%; /* 27.2px */
+  letter-spacing: 0.48px;
+}
+@media screen and (min-width: 768px) {
+  .visual__catchcopy {
+    text-align: left;
+  }
+}
+
+.visual__btn {
+  margin: 22px auto 0;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .visual__btn {
+    margin: 22px 0 0;
+  }
+}
+
+.btn__common {
+  display: inline-flex;
+  padding: 10px 30px;
+  border-radius: 60px;
+  border: 2px solid #FFF;
+  background: #111;
+  color: #FFF;
+  text-align: center;
+  font-weight: 700;
+  line-height: 170%; /* 27.2px */
+  letter-spacing: 0.48px;
+}
+
+.visual__img {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 380px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 30px);
+}
+@media screen and (min-width: 768px) {
+  .visual__img {
+    position: static;
+    transform: translateX(0);
+    width: 55%;
+    max-width: 600px;
+  }
 }
